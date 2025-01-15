@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ahmed Eldera</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="imgs\binary-code.png">
+</head>
+<body>
+  <script>
+    let text = "Hello ,<br> I'm Ahmed Eldera a front-end developer , <br> welcome to my page, have a look at my skills <br> and contact me if you are interested !";
+    let s = "";
+    let n = 0
+    function blink() {
+      let x =document.getElementById("text").innerHTML.length;
+        if (document.getElementById("text").innerHTML.charAt(--x)=="_"){
+          document.getElementById("text").innerHTML = s.slice(0,x);
+        }
+        else{
+          document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "_";
+        }
+    }
+    function writing(){
+      s=s.slice(0,n)+text.charAt(n)+"_";
+      document.getElementById("text").innerHTML = s;
+      n++;
+      if(n==text.length){
+        clearInterval(id);
+      }
+    }
+    let id = null;
+    let id2 = null;
+    id = setInterval(writing, 40);
+    id2 = setInterval(blink, 350);
+  </script>
+  <!--  -->
+<header>
+  <div class="logo">Ahmed Eldera</div>
+  <div class="headerContainer">
+  <div class="box" >
+  <a href="#skills" >skills</a>
+  </div>
+  <div class="box">
+    <a href="#contact">COntact</a>
+  </div>
+  </div>
+
+</header>
+<section class="main">
+      <div class="text" id="text" >
+        </div>
+        <div>
+          <img src="imgs\coding1.png" width="150px" height="150px border-radius: 100%;">
+      </div>
+</section>
+<section class="skills" id="skills">
+<ul class="level1">
+  <li>Good programming skills & Strong knowledge of fundemntals:
+    <ul class="itemRow">
+      <li>Data types
+      <li>Loops & conditions
+      <li>Functions,Arrays & lists
+      <li>OOP principles
+      </ul>
+  <li>Experience with:
+    <ul class="itemRow">
+      <li>HTML
+      <li>CSS
+      <li>Javascript (Manipulating DOM)
+      <li>Python , c++ , java
+    </ul>
+
+</ul>
+</section>
+<footer id="contact">
+  <p>Need a Website?<br>Contact Me!</p>
+  <hr>
+  <p>E-mail:hotoeldera@yahoo.com</p>
+</footer>
+</body>

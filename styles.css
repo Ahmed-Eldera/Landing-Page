@@ -1,0 +1,143 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+header {
+  /*0a1822 #081012*/
+  background-color:   #0c1416;
+  font-size: 1.2em;
+  font-weight: bold;
+  width : 100%;
+  position: fixed;
+  z-index: 10;
+  color: #ddd;
+  display : flex;
+  justify-content: space-between;
+  padding: 10px 30px ;
+
+  /* //border:5px solid red; */
+
+}
+.logo{
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  font-family: lucida Handwriting ,cursive;
+  font-size: 1.2em;
+}
+.headerContainer {
+  /* //background-color: #ccc; */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  margin-right: 100px;
+  /* border:5px solid blue; */
+
+}
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.box {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+  display : flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  
+}
+section {
+  width: auto;
+  height: 700px;
+  display: flex;
+}
+footer {
+  width: auto;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.8em;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+}
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;
+  background-color:#FFF;
+  height: 1px;
+}
+.main {
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c1416;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.skills {
+  background-color: #004d4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+
+}
+#contact {
+  background-color:  #0D2832;
+}
+.text{
+  font-size: 1.4em;
+  font-weight: bold;
+  color: rgb(4, 170, 109);
+  text-shadow:
+
+   0 0 2px #0ff;
+}
+.pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+img {
+  
+}
+.level1 {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  padding: 75px;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+}
+
+.itemRow{
+  color: white;
+  list-style-type: disc;
+  font-weight: bold;
+  font-size: 0.9em;
+
+}
